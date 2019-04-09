@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dip">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#ffb673"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:src="@drawable/gambar"
+                style="@style/style_image" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:text="Description"
+                style="@style/style_subtitle" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="Example application"
+                style="@style/style_title" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
